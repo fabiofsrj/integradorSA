@@ -5,19 +5,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-import com.sun.glass.ui.Application;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages={"br.com.sempreautos.integradorSA"})
 public class IntegradorSaApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(IntegradorSaApplication.class);
+        return application.sources(IntegradorSaApplication .class);
     }
-	
-	public static void main(String[] args) {
-		SpringApplication.run(IntegradorSaApplication.class, args);
-	}
-	
-	
+     
+    public static void main(String[] args) {
+        SpringApplication.run(IntegradorSaApplication.class, args);
+    }	
 }
