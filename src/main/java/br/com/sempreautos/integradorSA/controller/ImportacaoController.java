@@ -10,7 +10,7 @@ import br.com.sempreautos.integradorSA.service.LayoutXMLService;
 import br.com.sempreautos.integradorSA.service.UsuarioService;
 
 @Controller
-public class ImportacaoControler {
+public class ImportacaoController {
 
 	@Autowired
 	ImportacaoService importacaoService;
@@ -27,16 +27,12 @@ public class ImportacaoControler {
 		ModelAndView mv = new ModelAndView("/importacao");
         mv.addObject("importacoes", importacaoService.findAll());
         mv.addObject("layouts", layoutXMLService.findByUsuario(usuarioService.getUsuarioAutenticado()));
-        
-         
         return mv;		
 	}
 	
 	@GetMapping("/importacao/nova")
 	public ModelAndView novaImportacao(){
-        
 		ModelAndView mv = new ModelAndView("/novaImportacao");
-         
         return mv;		
 	}
 
