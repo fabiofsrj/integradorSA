@@ -3,6 +3,7 @@ package br.com.sempreautos.integradorSA.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.sempreautos.integradorSA.service.ImportacaoService;
@@ -34,6 +35,11 @@ public class ImportacaoController {
 	public ModelAndView novaImportacao(){
 		ModelAndView mv = new ModelAndView("/novaImportacao");
         return mv;		
+	}
+	
+	@PostMapping("importacao/importar")
+	public ModelAndView importar(){
+		return importacao();
 	}
 
 }
