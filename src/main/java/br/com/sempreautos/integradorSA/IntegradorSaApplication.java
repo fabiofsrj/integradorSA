@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-
 @SpringBootApplication(scanBasePackages={"br.com.sempreautos.integradorSA"})
 public class IntegradorSaApplication extends SpringBootServletInitializer {
 

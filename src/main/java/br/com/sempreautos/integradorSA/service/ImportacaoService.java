@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.sempreautos.integradorSA.model.Importacao;
-import br.com.sempreautos.integradorSA.repository.ImportacaoRepository;
+import br.com.sempreautos.integradorSA.model.integrador.Importacao;
+import br.com.sempreautos.integradorSA.repository.integrador.ImportacaoRepository;
 
 @Service
 public class ImportacaoService {

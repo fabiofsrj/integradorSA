@@ -6,9 +6,9 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.sempreautos.integradorSA.model.LayoutXML;
-import br.com.sempreautos.integradorSA.model.Usuario;
-import br.com.sempreautos.integradorSA.repository.LayoutXMLRepository;
+import br.com.sempreautos.integradorSA.model.integrador.LayoutXML;
+import br.com.sempreautos.integradorSA.model.integrador.Usuario;
+import br.com.sempreautos.integradorSA.repository.integrador.LayoutXMLRepository;
 
 
 @Service

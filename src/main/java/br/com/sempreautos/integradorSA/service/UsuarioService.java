@@ -11,10 +11,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import br.com.sempreautos.integradorSA.model.Perfil;
-import br.com.sempreautos.integradorSA.model.Usuario;
-import br.com.sempreautos.integradorSA.repository.PerfilRepository;
-import br.com.sempreautos.integradorSA.repository.UsuarioRepository;
+import br.com.sempreautos.integradorSA.model.integrador.Perfil;
+import br.com.sempreautos.integradorSA.model.integrador.Usuario;
+import br.com.sempreautos.integradorSA.repository.integrador.PerfilRepository;
+import br.com.sempreautos.integradorSA.repository.integrador.UsuarioRepository;
 
 @Service
 public class UsuarioService {
